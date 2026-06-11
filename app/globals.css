@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F4F1EC;
+  --surface: #EDEAE3;
+  --ink: #1A1916;
+  --muted: #6B6860;
+  --line: #D6D2C8;
+  --primary: #2D4A35;
+  --primary-ink: #F4F1EC;
+  --primary-soft: rgba(45, 74, 53, 0.12);
+  --accent: #C8B89A;
+  --accent-soft: rgba(200, 184, 154, 0.14);
+  /* RGB triplets — required for Tailwind opacity modifiers (bg-primary/50 etc.) */
+  --bg-rgb: 244 241 236;
+  --surface-rgb: 237 234 227;
+  --ink-rgb: 26 25 22;
+  --muted-rgb: 107 104 96;
+  --line-rgb: 214 210 200;
+  --primary-rgb: 45 74 53;
+  --primary-ink-rgb: 244 241 236;
+  --accent-rgb: 200 184 154;
+  /* Elevation + motion personality (rich tokens — shadows/easing ARE design system) */
+  --shadow-brand: 0 6px 24px -12px rgba(26, 25, 22, 0.25);
+  --shadow-brand-lg: 0 20px 50px -16px rgba(26, 25, 22, 0.35);
+  --ease-brand: cubic-bezier(0.32, 0.72, 0, 1);
+  --radius: 0px;
+  --space: 8px;
+  --motion: 350ms;
+}
+
+/* Functional floor only — never visual design (no forced columns, no !important grids) */
+*, *::before, *::after { box-sizing: border-box; min-width: 0; }
+html, body { overflow-x: clip; }
+img, video, svg { max-width: 100%; height: auto; }
+body { line-height: 1.5; }
+::selection { background: var(--primary); color: var(--primary-ink); }
